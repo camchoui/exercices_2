@@ -77,9 +77,12 @@ ex2_4()
 
   print(listMembers2);
   print(listMembers);
-  print(listMembers2[1]);
-  print(listMembers2[2]);
+  
+  var caractereSpecific = listMembers2.where((lettre) => lettre.startsWith('T')).toList(); 
+  
+ print(caractereSpecific);
 }
+
 
 ex2_5(){
   List membresDynamo = ['Jacques, Richard, Jean, Gaetan, Madeleine, Thérèse'];
